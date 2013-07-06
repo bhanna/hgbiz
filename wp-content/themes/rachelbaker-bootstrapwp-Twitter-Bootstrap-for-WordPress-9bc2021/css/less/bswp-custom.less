@@ -1,0 +1,388 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100|Roboto:400,300,100);
+
+body{padding-top: 70px}
+
+// =====================
+// Type
+// =====================
+
+.content { }
+h1, h2, h3, h4, h5, h6{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 100;
+   /*font-family: 'Roboto Slab', serif;*/
+}
+
+// =====================
+// Navbar
+// =====================
+.navbar .brand {
+	background: url(../img/logo.png) no-repeat;
+	height: 58px;
+	width: 188px;
+	text-indent: -9999px;
+	padding: 0 0 0 0;
+}
+
+.navbar .nav > li > a {
+float: none;
+padding: 5px 15px 5px;
+color: #ffffff;
+text-decoration: none;
+text-shadow: 0 1px 0 #617892;
+margin-top: 30px;
+border-radius: 5px 5px 0 0;
+}
+
+// =====================
+// Member Nav
+// =====================
+
+.member-nav {
+  position: absolute;
+  top:5px;
+  right: 68px;
+  color:#fff;
+
+  a{
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #617892;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    &:hover{color: @green;}
+  }
+
+}
+
+#contactModal{color:#444;}
+
+// =====================
+// Modals
+// =====================
+
+.your-subject input, .your-message textarea{
+  width:480px;
+}
+.your-message textarea{
+  height: 115px;
+}
+
+// =====================
+// Anchors
+// =====================
+
+.anchor{padding-top: 60px; margin-top: -60px}
+section{margin-top: 20px;}
+
+// =====================
+// Service Page
+// =====================
+
+.service{
+   float: left;
+   padding: 0 5px;
+   border: 1px solid #caced2;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 2px 2px 3px #f0f0f0;
+-moz-box-shadow: 2px 2px 3px #f0f0f0;
+box-shadow: 2px 2px 3px #f0f0f0;
+margin: 15px 0;
+}
+.service.plus {
+
+}
+.service h3{
+   border-bottom: 1px solid #caced2;
+   text-align: center;
+}
+
+.large{text-align: center;}
+
+.internal-links {
+position: absolute;
+top: 115px;
+right: 50px;
+}
+
+// =====================
+// Pricing Tier
+// =====================
+.mepr-price-menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mepr-price-boxes {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mepr-price-box {
+  vertical-align: bottom;
+  display: inline-block;
+  /* background-color: #dedede; */
+  padding: 7px;
+  margin: 0;
+  text-align: center;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Right now we're good up to 10 columns */
+.mepr-price-boxes.mepr-1-col .mepr-price-box {
+  width: 100%;
+}
+
+.mepr-price-boxes.mepr-2-col .mepr-price-box {
+  width: 47%;
+}
+
+.mepr-price-boxes.mepr-3-col .mepr-price-box {
+  width: 30%;
+}
+
+.mepr-price-boxes.mepr-4-col .mepr-price-box {
+  width: 22.5%;
+}
+
+.mepr-price-boxes.mepr-5-col .mepr-price-box {
+  width: 18%;
+}
+
+.mepr-price-boxes.mepr-6-col .mepr-price-box {
+  width: 14.5%;
+}
+
+.mepr-price-boxes.mepr-7-col .mepr-price-box {
+  width: 12%;
+}
+
+.mepr-price-boxes.mepr-8-col .mepr-price-box {
+  width: 11%;
+}
+
+.mepr-price-boxes.mepr-9-col .mepr-price-box {
+  width: 9%;
+}
+
+.mepr-price-boxes.mepr-10-col .mepr-price-box {
+  width: 8%;
+}
+
+.mepr-price-box.highlighted {
+  /* background-color: #f1f1f1; */
+  padding: 10px;
+}
+
+.mepr-price-box-title {
+font-size: 175%;
+font-weight: bold;
+margin-top: 10px;
+margin-bottom: 20px;
+border-bottom: 1px dashed #fff;
+padding-bottom: 15px;
+}
+
+.mepr-price-box-price {
+  margin-top: 0px;
+margin-bottom: 0px;
+font-weight: normal;
+font-size: 130%;
+color: #fff;
+text-shadow: 1px 1px 2px #444;
+}
+
+.mepr-price-box-heading {
+  margin-top: 5px;
+  font-size: 120%;
+}
+
+.mepr-price-box-benefits .mepr-price-box-benefits-list {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.mepr-price-box-benefits .mepr-price-box-benefits-list .mepr-price-box-benefits-item {
+  font-size: 100%;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  /* border-bottom: 1px dotted #888888; */
+}
+
+.mepr-price-box-footer {
+  margin-top: 5px;
+}
+
+.mepr-price-box-button {
+  background: rgba(255,255,255,.5);
+padding: 5px;
+margin: 10px -7px;
+border-top: 1px solid #A6C660;
+border-bottom: 1px solid #7F9348;
+}
+
+.mepr-price-box.highlighted .mepr-price-box-button a {
+  font-size: 150%;
+}
+
+.mepr-price-box-button a {
+  /*padding: 5px 7px;*/
+  font-weight: bold;
+  /* background-color: #f4f4f4; */
+}
+
+.mepr-price-box-button a:hover {
+  text-decoration: none;
+  background-color: white;
+}
+
+.mepr-price-box .mepr-price-box-button a.mepr-disabled {
+  background-color: #9f9f9f;
+  cursor: default;
+}
+
+.mepr-price-box .mepr-price-box-button a.mepr-disabled:hover {
+  background-color: #9f9f9f;
+}
+
+/* Responsive Design */
+/* Effectively just pulls in the gray_vertical.css styles */
+@media all and (max-width: 1200px) {
+  .mepr-price-box-heading {
+    font-size: 100%;
+  }
+  
+  .mepr-price-box-benefits .mepr-price-box-benefits-list .mepr-price-box-benefits-item {
+    font-size: 90%;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .mepr-price-menu, .mepr-price-boxes {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mepr-price-box,
+  .mepr-price-boxes.mepr-1-col .mepr-price-box,
+  .mepr-price-boxes.mepr-2-col .mepr-price-box,
+  .mepr-price-boxes.mepr-3-col .mepr-price-box,
+  .mepr-price-boxes.mepr-4-col .mepr-price-box,
+  .mepr-price-boxes.mepr-5-col .mepr-price-box,
+  .mepr-price-boxes.mepr-6-col .mepr-price-box,
+  .mepr-price-boxes.mepr-7-col .mepr-price-box,
+  .mepr-price-boxes.mepr-8-col .mepr-price-box,
+  .mepr-price-boxes.mepr-9-col .mepr-price-box,
+  .mepr-price-boxes.mepr-10-col .mepr-price-box {
+    /* background-color: #dedede; */
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-1-col .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-2-col .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-3-col .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-4-col .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-5-col .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-6-col .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-7-col .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-8-col .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-9-col .mepr-price-box.highlighted,
+  .mepr-price-boxes.mepr-10-col .mepr-price-box.highlighted {
+    /* background-color: #f1f1f1; */
+    padding: 10px;
+    width: 95% !important;
+  }
+  
+  .mepr-price-box-title {
+    font-size: 175%;
+    font-weight: bold;
+    margin-top:10px;
+    margin-bottom:5px;
+  }
+  
+  .mepr-price-box-price {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 210%;
+  }
+  
+  .mepr-price-box-heading {
+    margin-top: 5px;
+    font-size: 120%;
+  }
+  
+  .mepr-price-box-benefits .mepr-price-box-benefits-list {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .mepr-price-box-benefits .mepr-price-box-benefits-list .mepr-price-box-benefits-item {
+    font-size: 110%;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    /* border-bottom: 1px dotted #888888; */
+  }
+  
+  .mepr-price-box-footer {
+    margin-top: 5px;
+  }
+  
+  .mepr-price-box-button {
+    margin: 10px 0;
+  }
+  
+  .mepr-price-box-button a {
+    /*padding: 5px 7px;*/
+    font-weight: bold;
+    /* background-color: #f4f4f4; */
+  }
+  
+  .mepr-price-box-button a:hover {
+    text-decoration: none;
+    background-color: white;
+  }
+}
+
+.mepr-price-box {
+  background-color: #98BB58;
+  color: #444;
+  margin: 15px 0;
+}
+
+.mepr-price-box.highlighted {
+  background-color: #98BB58;
+  color: #444;
+}
+
+.mepr-price-box-benefits .mepr-price-box-benefits-list .mepr-price-box-benefits-item {
+  border-bottom: 1px dotted #efefef;
+}
+
+.mepr-price-box-button a {
+  background-color: #f4f4f4;
+}
+
+.mepr-price-box-button a:hover {
+  background-color: white;
+}
