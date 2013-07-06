@@ -24,8 +24,7 @@
 
   </body>
   <script type="text/javascript"> 
-  $("a").tooltip({
-        'selector': '',
+  $('[rel=tooltip]').tooltip({
         'placement': 'top'
     });</script>
   <script>
