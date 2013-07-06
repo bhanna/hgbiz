@@ -340,7 +340,7 @@ function _wp_menu_item_classes_by_context( &$menu_items ) {
 				( 'taxonomy' == $menu_item->type && ( $wp_query->is_category || $wp_query->is_tag || $wp_query->is_tax ) && $queried_object->taxonomy == $menu_item->object )
 			)
 		) {
-			$classes[] = 'current-menu-item';
+			$classes[] = 'current-menu-item active';
 			$menu_items[$key]->current = true;
 			$_anc_id = (int) $menu_item->db_id;
 
